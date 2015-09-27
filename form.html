@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="column">
+            <div>
+                <h2>
+                    <center>OLA Now</center>
+                </h2><!-- the links to our nested states using relative paths -->
+                <!-- add the active class if the state matches our ui-sref -->
+                <!-- <div class="text-center" id="status-buttons">
+                    <a ui-sref=".profile" ui-sref-active="active"><span>1</span> Profile</a> <a ui-sref=".interests" ui-sref-active="active"><span>2</span> Interests</a> <a ui-sref=".payment" ui-sref-active="active"><span>3</span> Payment</a>
+                </div> -->
+                <div class="ui three top attached steps">
+                    
+                    <a class="active step" ui-sref=".profile" ui-sref-active="active">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Enter Details</div>
+                            <div class="description">Enter Company Credentials, and Address</div>
+                        </div>
+                    </a>
+
+                    <a class="step" ui-sref=".interests" ui-sref-active="active">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Theming</div>
+                            <div class="description">Select, Customize your Button.</div>
+                        </div>
+                    </a>
+
+                    <a class="step" ui-sref=".payment" ui-sref-active="active">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Finish</div>
+                            <div class="description">Copy and paste the Code in your Site</div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="ui attached segment">
+                    <form id="signup-form" name="signup-form" ng-submit="processForm()">
+                <!-- our nested state views will be injected here -->
+                <div id="form-views" ui-view=""></div>
+            </form>
+                </div>
+
+
+            </div><!-- use ng-submit to catch the form submission and use our Angular function -->
+        <!-- show our formData as it is being typed -->
+        <pre>
+    {{ formData }}
+  
+</pre>
+    </div>
+</div>

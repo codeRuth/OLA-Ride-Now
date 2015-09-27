@@ -1,0 +1,76 @@
+<!-- form-profile.html -->
+</br>
+<div class="ui form six centered grid">
+  <div class="field">
+  	<div class="field">
+        <h4 class="ui dividing header">Company Info.</h4>
+        <div class="field">
+          <div class="field">
+            <input type="text" ng-model="formData.companyName" placeholder="Company Name">
+          </div>
+        </div>
+      </div>
+  <div class="field">
+        <h4 class="ui dividing header">Company Address.</h4>
+        <div class="two fields">
+          <div class="field four wide computer">
+            <input type="text" ng-model="formData.num" placeholder="No.">
+          </div>
+          <div class="field sixteen wide computer">
+            <input type="text" ng-model="formData.streetOne" placeholder="Street #1">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="two fields">
+          <div class="field">
+            <input type="text"ng-model="formData.streetTwo" placeholder="Street #2">
+          </div>
+          <div class="field">
+            <input type="text" ng-model="formData.landmark" placeholder="Landmark">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="two fields">
+          <div class="field ten wide computer">
+            <input type="text"ng-model="formData.city" placeholder="City">
+          </div>
+          <div class="field six wide computer">
+            <input type="number" ng-model="formData.pin" placeholder="PIN No.">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="field">
+      <h4 class="ui dividing header">Working Hours.</h4>
+        <div class="two fields">
+          <div class="field eight wide computer">
+            <input type="time" ng-model="formData.startTime" placeholder="City">
+          </div>
+          <div class="field eight wide computer">
+            <input type="time" ng-model="formData.endTime" placeholder="12:00 AM">
+          </div>
+        </div>
+      </div>
+
+      <div>
+
+      </div>
+
+
+      <div>
+    <button ui-sref="form.theme" class="ui primary button">Next Section</button>
+</div>
+</br>
+  </div>
+
+</div>
+
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+<!-- ui-sref="form.interests" -->
+
+ <!-- ng-model="formData.name" -->
